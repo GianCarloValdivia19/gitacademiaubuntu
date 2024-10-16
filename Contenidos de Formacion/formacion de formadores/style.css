@@ -1,0 +1,154 @@
+/* Estilos personalizados */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ebeb url("/imagen/FONDO-EW.jpg") no-repeat center/cover;
+}
+
+h1{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.container{
+  margin-top: 70px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 15px; /* Espacio entre los párrafos */
+  font-size: 22px; /* Tamaño de la fuente un poco más grande */
+  line-height: 1.6; /* Espaciado entre las líneas del texto */
+}
+
+.subtitulo{
+  text-align: center;
+  color: red;
+  
+}
+
+.hr {
+  height: 2px;
+  background-color: rgb(158, 158, 158);
+}
+
+.custom-div{
+  width: 500px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+
+/*Botones*/
+.btn {
+  margin-top: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  width: 150px; /* Ancho fijo del botón */
+  height: 50px; /* Alto fijo del botón */
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-info:hover {
+  color: white;
+  border-color: #313a43;
+  background-color: #2e4156;
+}
+
+.homepage a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 10px;
+  fill: white;
+  width: 20px; /* Tamaño base */
+}
+
+.homepage{
+  width: 350px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px; /* Espacio superior */
+  margin-bottom: 30px; /* Espacio inferior (ajusta el valor según lo necesites) */
+}
+
+/* hacer pagina web responsive */
+/* Media queries para pantallas pequeñas (móviles) */
+@media (prefers-reduced-motion: reduce) {
+  .bottom-nojump {
+    transition: linear;
+  }
+}
+@media (max-width: 768px) and (max-width: 992px){
+  /* Estilos específicos para pantallas menores o iguales a 768px */
+  /* Por ejemplo, ajustes de tamaño de fuente, márgenes, etc. */
+  h1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 1.2em;
+    
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  p{
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .homepage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: -20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .custom-div{
+  width: 90%;
+  margin-top: -20px;
+  }
+}

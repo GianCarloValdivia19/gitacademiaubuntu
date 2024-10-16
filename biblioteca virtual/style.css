@@ -1,0 +1,200 @@
+/* estilos.css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+main {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+main > .inner {
+  padding: 3rem 2rem;
+}
+
+body { 
+  font-family: "Tahoma", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ebeb url("/imagen/FONDO-EW.jpg") no-repeat center/cover;
+}
+h1 {
+  color: #4b5156; /* Color oscuro */
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 55px;
+  margin-bottom: 35px;
+}
+a {
+  text-decoration: none !important;
+}
+
+/* Estilo para los párrafos */
+p {
+  color: rgba(0, 0, 0, 0.71);
+  font-size: 1.1em; /* Tamaño base */
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+li {
+  font-weight: bold;
+}
+
+.lista-libros {
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.lista-libros li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.row-4 {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.btn-donate {
+  min-width: 200px;
+  width: 100%;
+  border-radius: 25px;
+  border: 4px solid red;
+  transition: all 500ms ease-in-out;
+}
+
+.btn-info:hover{
+  color: white;
+  border-color: #313a43;
+  background-color: #2E4156;
+}
+
+.btn-donate:hover {
+  border: 4px solid #2e4156;
+}
+
+
+/* Estilo para el botón homepage */
+.btn {
+  margin-top: 2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  width: 150px; /* Ancho fijo del botón */
+  height: 50px; /* Alto fijo del botón */
+  align-items: flex-start;
+}
+
+.content {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.options {
+  font-size: 1.1rem;
+}
+
+.homepage a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 10px;
+  fill: white;
+  font-size: 2rem;
+  width: 20px; /* Tamaño base */
+}
+
+/* hacer pagina web responsive */
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) and (max-width: 992px) {
+
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .full-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+@media (min-width: 1040px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 580px) {
+  .lista-libros li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0.4rem;
+  }
+}
+@media (min-width: 1040px) {
+  .title-container {
+    font-size: 4em; /* Aumenta el tamaño en 1040px */
+  }
+  .options {
+    font-size: 1.15em; /* Aumenta el tamaño en 1040px */
+  }
+  .content {
+    font-size: 1.25em; /* Aumenta el tamaño en 1040px */
+  }
+}
+
+@media (min-width: 1200px) {
+  .title-container {
+    font-size: 5em; /* Aumenta el tamaño en 1200px */
+  }
+  .options {
+    font-size: 1.3em; /* Aumenta el tamaño en 1200px */
+  }
+  .content {
+    font-size: 1.5em; /* Aumenta el tamaño en 1200px */
+  }
+}
+
+@media (min-width: 1400px) {
+  .title-container {
+    font-size: 6em; /* Aumenta el tamaño en 1400px */
+  }
+  .options {
+    font-size: 1.5em; /* Aumenta el tamaño en 1400px */
+  }
+  .content {
+    font-size: 1.75em; /* Aumenta el tamaño en 1400px */
+  }
+}

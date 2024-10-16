@@ -1,0 +1,127 @@
+/* estilos.css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+main {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  
+  main > .inner {
+    padding: 3rem 2rem;
+  }
+body {
+  font-family: "Tahoma", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ebeb url("/imagen/FONDO-EW.jpg") no-repeat center/cover;
+}
+
+/* Estilo para el título principal */
+h1 {
+  color: #4b5156; /* Color oscuro */
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 55px;
+}
+a {
+  text-decoration: none !important;
+}
+
+
+/* Estilo para los subtítulos */
+h2 {
+  font-weight: 700;
+  margin: 0;
+  color: #4b5156; /* Color azul */
+}
+
+/* Estilo para los párrafos */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+  color: #313a43;
+  margin-bottom: 15px;
+}
+
+.parrafo p {
+  margin-bottom: 15px; /* Espacio entre los párrafos */
+  font-size: 22px; /* Tamaño de la fuente un poco más grande */
+  line-height: 1.6; /* Espaciado entre las líneas del texto */
+}
+
+.title {
+  color: #2d2d2d;
+}
+
+
+/* Estilo para el botón */
+.btn {
+  margin-top: 2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  width: 150px; /* Ancho fijo del botón */
+  height: 50px; /* Alto fijo del botón */
+  align-items: flex-start;
+}
+
+.btn-info:hover {
+  color: white;
+  border-color: #313a43;
+  background-color: #2e4156;
+}
+
+.homepage a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 10px;
+  fill: white;
+  width: 20px; /* Tamaño base */
+}
+
+/* hacer pagina web responsive */
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) and (max-width: 992px) {
+  /* Estilos específicos para pantallas menores o iguales a 768px */
+  /* Por ejemplo, ajustes de tamaño de fuente, márgenes, etc. */
+  .parrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    width: 95%;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    width: 95%;
+    text-align: center;
+  }
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+}

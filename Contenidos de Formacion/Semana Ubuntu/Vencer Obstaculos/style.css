@@ -1,0 +1,321 @@
+/* estilos.css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3ebeb url("/imagen/FONDO-EW.jpg");
+}
+
+main {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+main > .inner {
+  padding: 3rem 2rem;
+}
+
+/* Estilo para el título principal */
+h1 {
+  color: #4b5156; /* Color oscuro */
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+h2,
+h3 {
+  margin-top: 80px;
+  font-weight: bold;
+}
+
+.container-img {
+  min-height: 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../imagen/obstaculos.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Estilo para los párrafos */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+  color: #313a43;
+  margin-bottom: 40px;
+  margin-top: 45px;
+}
+
+.list-group li {
+  background-color: #ffffff00;
+  border-color: transparent;
+  width: 100%;
+  margin-left: 10vw;
+}
+
+.lista-options ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lista-options {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+  color: black;
+}
+
+.focus-text {
+  font-size: 1.2em; /* Tamaño de la fuente del párrafo */
+  font-style: italic; /* Cursiva */
+  color: black;
+  line-height: 1.6; /* Espaciado entre líneas */
+  font-weight: 500;
+}
+
+.btn-container ul {
+  display: grid;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+  gap: 0.5rem;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.icon-btn {
+  margin-left: 10px;
+  fill: white;
+  width: 20px; /* Tamaño base */
+  transform: translateY(-3px); /* Ajusta el valor para subir el ícono */
+}
+
+.btn-donate {
+  min-width: 280px;
+  border-radius: 30px;
+  display: flex;
+  padding: 15px 10px !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-donate:hover {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: rgb(255, 105, 97);
+  --btn-bg-2: rgb(255, 31, 31);
+  --btn-bg-color: rgb(255, 255, 255);
+  --radii: 0.8em;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: bold;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border-color: #ffffff9d;
+  color: var(--btn-bg-color);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+/*
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+*/
+
+
+/* Estilo para el botón */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.homepage {
+  width: 350px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.homepage a {
+  align-items: center;
+  max-width: 100%;
+  font-weight: bold;
+}
+
+.icon {
+  margin-left: 10px;
+  fill: white;
+  width: 20px; /* Tamaño base */
+}
+
+.btn-info:hover {
+  color: white;
+  border-color: #313a43;
+  background-color: #2e4156;
+}
+
+
+
+/* hacer pagina web responsive */
+
+/* Media queries para pantallas pequeñas (móviles) */
+
+@media (min-width: 1040px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 350px) {
+  .container-img {
+    min-height: 150px;
+  }
+}
+@media (min-width: 720px) {
+  .container-img {
+    min-height: 250px;
+  }
+}
+@media (min-width: 990px) {
+  .container-img {
+    min-height: 320px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+@media (max-width: 768px) and (max-width: 992px) {
+  /* Estilos específicos para pantallas menores o iguales a 768px */
+  /* Por ejemplo, ajustes de tamaño de fuente, márgenes, etc. */
+
+  h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .col {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .list-group {
+    margin-bottom: 30px;
+  }
+
+  .col ul li {
+    margin-top: 0px;
+    height: 50px;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-donate {
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  .lista-options ul li {
+    width: 90%;
+    text-align: justify;
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+
+  q {
+    margin-left: 20px;
+  }
+
+  .homepage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .custom-div {
+    width: 90%;
+    margin-top: -20px;
+  }
+  .list-group li {
+    margin-left: 8vw;
+  }
+}
+@media (min-width: 650px) {
+  .btn-container ul {
+    width: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 560px;
+  }
+}
